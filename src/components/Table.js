@@ -18,7 +18,7 @@ class Table extends Component {
                         )
                     }))
                 )
-            }
+        }
 
         return (
             <div>

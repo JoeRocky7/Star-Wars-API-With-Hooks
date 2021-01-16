@@ -20,7 +20,7 @@ const App = () => {
       for (const character of response.data.results) {
         const homeworld = await axios.get("https" + character.homeworld.slice(4));
         character.homeworld = homeworld.data.name;
-
+                                                                          
         if (character.species.length !== 0) {
           const species = await axios.get("https" + character.species[0].slice(4));
           !species.data.name ? character.species = "Human" : character.species = species.data.name;

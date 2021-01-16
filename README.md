@@ -17,6 +17,10 @@ You can visit the App [here](https://starwarsapi4.herokuapp.com)
 
 This is the 6th application I have completed in my Software development journey. I was initially very excited to start this project because I was finally going to learn how to fetch data from an API, which is a critical step to learning Web Development.
 
+
+
+
+
 # Author 
 
 **Joseph Mittiga** - *Front-End Developer* - [Linkedin](https://www.linkedin.com/in/joseph-mittiga-939121203/)
