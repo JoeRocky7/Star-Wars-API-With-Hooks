@@ -1,19 +1,13 @@
 import React, { Component } from 'react'
+import Character from "./Character";
 
 class Table extends Component {
     render() {
         const allCharacters = this.props.characters.map((character => {
-                        return (
-                            <tr>
-                                <td>{character.name}</td>
-                                <td>{character.birth_year}</td>
-                                <td>{character.height}</td>
-                                <td>{character.mass}</td>
-                                <td>{character.homeworld}</td>
-                                <td>{character.species}</td>
-                            </tr>
-                        )
-                    }))
+            return (
+                <Character {...character}/>
+            )
+        }))
 
         return (
             <div>
@@ -28,7 +22,7 @@ class Table extends Component {
                     </thead>
                     <tbody>
                         {this.props.isLoading ? <h1>Loading...</h1>
-                        : allCharacters}
+                            : allCharacters}
                     </tbody>
                 </table>
             </div>
